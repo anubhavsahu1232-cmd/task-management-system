@@ -5,10 +5,11 @@ WORKDIR /app
 COPY .mvn .mvn
 COPY mvnw pom.xml ./
 
-RUN chmod +x mvnw
-RUN ./mvnw clean package -DskipTests
-
 COPY src src
+
+RUN chmod +x mvnw
+
+RUN ./mvnw clean package -DskipTests
 
 EXPOSE 10000
 
