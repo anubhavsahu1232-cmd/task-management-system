@@ -73,7 +73,13 @@ Configure the MySQL connection and JWT settings before running.
 
 > Never commit passwords, tokens, or production credentials.
 
-## 🔗 Frontend
+## 🌐 Live Demo
+
+[![🚀 LIVE DEMO](https://img.shields.io/badge/🚀%20LIVE%20DEMO-2563EB?style=for-the-badge)](https://task-management-frontend-fpzp.onrender.com)
+
+**Live URL:** https://task-management-frontend-fpzp.onrender.com
+
+## 🔗 Frontend Source Code
 
 https://github.com/anubhavsahu1232-cmd/task-management-frontend
 
