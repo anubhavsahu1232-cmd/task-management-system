@@ -1,72 +1,87 @@
-# Task Management System - Backend
+# ✅ Task Management System — Backend
 
-A secure REST API backend for managing personal tasks using Spring Boot, MySQL and JWT authentication.
+A secure **REST API backend** for managing personal tasks using **Java, Spring Boot, MySQL, and JWT authentication**.
 
-## 🚀 Features
+## ✨ Features
 
-- User registration
-- Secure password hashing using BCrypt
-- User login with JWT authentication
-- JWT-based protected APIs
-- Create, view, update and delete tasks
-- User-specific task access
-- Task status management
-- Task priority management
-- Due date validation
-- Global exception handling
-- Swagger/OpenAPI documentation
-- MySQL database integration
+- 👤 User registration and authentication
+- 🔐 BCrypt password hashing
+- 🎫 JWT-based authentication
+- 🛡️ Protected REST APIs
+- ➕ Create, view, update, and delete tasks
+- 📊 Task status and priority management
+- 📅 Due-date validation
+- ⚠️ Global exception handling
+- 📚 Swagger / OpenAPI documentation
+- 🗄️ MySQL integration
 
-## 🛠️ Tech Stack
+## 🧰 Tech Stack
 
-- Java 17
-- Spring Boot
-- Spring Security
-- Spring Data JPA
-- MySQL
-- JWT
-- Maven
-- Swagger / OpenAPI
+| Technology | Purpose |
+|---|---|
+| Java 17 | Backend language |
+| Spring Boot | Application framework |
+| Spring Security | Authentication & authorization |
+| JWT | Stateless authentication |
+| Spring Data JPA | Data access |
+| Hibernate | ORM |
+| MySQL | Database |
+| Maven | Build management |
+| Swagger / OpenAPI | API documentation |
 
-## 📁 Project Structure
+## 🏗️ Architecture
+
+```text
+React Frontend
+      │
+      │ HTTP + JSON
+      ▼
+Spring Boot REST API
+      │
+      ├── Controller
+      ├── Service
+      ├── Repository
+      ├── Security / JWT
+      └── Exception Handler
+              │
+              ▼
+            MySQL
+```
+
+## 📁 Package Structure
 
 ```text
 src/main/java/com/taskmanager
-│
 ├── config
-│   ├── JwtAuthenticationFilter.java
-│   ├── OpenAPIConfig.java
-│   ├── SecurityConfig.java
-│   └── WebConfig.java
-│
 ├── controller
-│   ├── AuthController.java
-│   ├── TaskController.java
-│   └── UserController.java
-│
 ├── dto
-│   ├── LoginRequest.java
-│   ├── LoginResponse.java
-│   ├── TaskRequest.java
-│   ├── TaskResponse.java
-│   ├── UserRequest.java
-│   └── UserResponse.java
-│
 ├── exception
-│   └── GlobalExceptionHandler.java
-│
 ├── model
-│   ├── Task.java
-│   ├── TaskPriority.java
-│   ├── TaskStatus.java
-│   └── User.java
-│
 ├── repository
-│   ├── TaskRepository.java
-│   └── UserRepository.java
-│
 └── service
-    ├── AuthService.java
-    ├── JwtService.java
-    ├── TaskService.java
-    └── UserService.java
+```
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/anubhavsahu1232-cmd/task-management-system.git
+cd task-management-system
+mvn spring-boot:run
+```
+
+Configure the MySQL connection and JWT settings before running.
+
+> Never commit passwords, tokens, or production credentials.
+
+## 🔗 Frontend
+
+https://github.com/anubhavsahu1232-cmd/task-management-frontend
+
+## 📌 Learning Outcomes
+
+- REST API development
+- JWT authentication and authorization
+- Layered Spring Boot architecture
+- JPA/Hibernate database integration
+- Validation and exception handling
+- Swagger/OpenAPI documentation
